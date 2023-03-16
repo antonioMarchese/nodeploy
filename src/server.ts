@@ -35,6 +35,8 @@ app.listen(
   process.env.PORT ? Number(process.env.PORT) : 3333,
   "0.0.0.0",
   () => {
-    console.log("Server running");
+    console.log(
+      `Server running at ${process.env.PORT ? Number(process.env.PORT) : 3333}`
+    );
   }
 );
